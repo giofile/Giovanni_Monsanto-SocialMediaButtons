@@ -1,0 +1,90 @@
+$aaHeight: 50px;
+$bbWidth: 50px;
+$ccWidth: 500px;
+$ddPadding: .125em .375em;
+$eeTransition: 1.1s width ease-in-out;
+
+@import "./body";
+
+@mixin starter(){
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.test{
+   @include starter();
+&__-2{
+    @include starter();
+&__-3{
+    @include starter();
+&__-4{
+    @include starter();
+&__-5{
+    @include starter();  
+}
+}
+}
+}
+}
+
+#facebook{    
+    height: $aaHeight;
+    width: $bbWidth;
+    transition: $eeTransition;
+&__em{   
+    display: inline-block;
+&__:hover{
+    width: $ccWidth;
+    background: #3b5998;
+    color: white;
+    display: inline-block;
+    padding: $ddPadding;
+    visibility: visible;    
+}
+}
+}
+
+#twitter{    
+    height: $aaHeight;
+    width: $bbWidth;
+    transition: $eeTransition;    
+&__:hover{
+    width: $ccWidth;
+    background: #00aced;
+}
+}
+
+#linkedin{
+    height: $aaHeight;
+    width: $bbWidth;
+    transition: $eeTransition;    
+&__:hover{
+    width: $ccWidth;
+    background: #007bb6;
+}
+}
+
+#blogger{
+    height: $aaHeight;
+    width: $bbWidth;
+    transition: $eeTransition;    
+&__:hover{
+    width: $ccWidth;
+    background: #e17b77;
+}
+}
+
+#github{
+    height: $aaHeight;
+    width: $bbWidth;
+    transition:$eeTransition;    
+&__:hover{
+    width: $ccWidth;
+    background:  #333;
+    color: white;
+    display: inline-block;
+    padding: $ddPadding;
+}
+}
